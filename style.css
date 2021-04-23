@@ -1,0 +1,293 @@
+*, html, body, *:after, *:before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.btn-theme {
+	color: #ffff;
+}
+
+p, li, input, button h1, h2 {
+	font-family: Arial;
+}
+
+
+header {
+	background-color: #000;
+	float: left;
+	width: 100%;
+	color: #fff;
+}
+
+
+header > div {
+	float: left;
+	width: 50%;
+} 
+
+header > div > div {
+	float: left;
+	width: 50%;
+}
+header > div > .logo-container {
+	width: 45%;
+	overflow: hidden;
+	perspective: 500px;
+	perspective-origin: center;
+}
+header > div > .main-navbar {
+	padding-top: 8px;
+}
+
+
+header > div > .logo-container img {
+	float: right;
+	animation: playwithlogo 4s 1s infinite reverse ease-in;
+}
+
+header > div > .main-navbar ul {
+	list-style-type: none;
+	width: 100%;
+	float: left;
+}
+
+header > div > .main-navbar ul li {
+	float: left;
+	padding: 10px 0;
+	margin: 0 10px;
+}
+
+header > div > .main-navbar ul li a {
+	color: darkgray;
+	text-decoration: none;
+}
+
+header > div > .main-navbar ul li.active a {
+	color: #fff;
+}
+
+
+.sign-area > div {
+	float: right;
+	width: 45%;
+	margin-top: 18px;
+}
+
+.sign-area > div > a {
+	color: darkgray;
+	text-decoration: none;
+}
+
+
+.sign-area > div > a.btn-theme {
+	color: #fff;
+	background-color: #4250f6;
+	padding: 10px 20px;
+	margin: 0 10px;
+	border-radius: 4px;
+}
+
+.sec-navbar {
+    float: left;
+    width: 100%;
+}
+
+.sec-navbar p {
+	float: left;
+	width: 30%;
+	text-align: right;
+	color: #4a4a4a;
+	padding: 20px 0;
+	font-size: 1.3em;
+}
+
+.sec-navbar ul {
+	list-style-type: none;
+}
+
+
+.sec-navbar ul li {
+	float: left;
+	margin: 0 15px;
+	padding: 20px 0;
+	border-bottom: 1px solid #fff;
+	transition: all .3s ease-in-out;
+}
+
+.sec-navbar ul li:hover, .sec-navbar ul li.active {
+	border-bottom: 1px solid #4f4a4a;
+}
+
+.sec-navbar ul li:hover a, .sec-navbar ul li.active a  {
+	color: #4f4a4a;
+}
+
+.sec-navbar ul li a {
+	color: #b1b1b1;
+	text-decoration: none;
+	transition: all .3s ease-in;
+}
+
+.main-section {
+	float: left;
+	width: 100%;
+}
+
+.main-section ul {
+	list-style-type: none;
+	width: 88%;
+	display: table;
+	margin: 10px auto;
+}
+
+.main-section ul li {
+	float: left;
+	padding: 15px 10px;
+	margin: 0 10px;
+}
+
+
+.main-section ul li a {
+	text-decoration: none;
+	color: #4f4a4a;
+}
+
+.main-section .cards-section {
+	width: 88%;
+	display: table;
+	margin: 0 auto;
+}
+
+.main-section .cards-section .card-box {
+	width: calc(25% - 15px);
+	float: left;
+	margin-right: 15px;
+}
+
+.main-section .cards-section .card-box > div:first-of-type {
+	background-color: #eee;
+	border: 1px solid #adadad;
+	float: left;
+}
+
+.main-section .cards-section .card-box .box-img {
+	position: relative;
+	overflow: hidden;
+	}
+
+.main-section .cards-section .card-box .box-img img {
+	max-width: 240px;
+	transition: all .5s ease-in;
+}
+
+.main-section .cards-section .card-box .box-img div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	max-height: 175px;
+	width: 0;
+	color: #fff;
+	padding-top: 20%;
+	text-align: center;
+	background-color: #171616;
+	opacity: .9;
+	transition: all .5s ease-in-out;
+	transition-timing-function: ease-in-out;
+	transition-delay: .1s;
+	transition-duration: .5s;
+	transition-property: all;
+}
+
+.main-section .cards-section .card-box .box-img:hover div {
+    width: 60%;
+}
+
+.main-section .cards-section .card-box .box-img:hover img {
+	transform: scale(1.1);
+}
+
+.main-section .cards-section .card-box > div:first-of-type img {
+	width: 100%;
+	max-height: 175px;
+}
+
+
+.main-section .cards-section .card-box .author-box {
+	margin: 10px auto;
+	float: left;
+}
+
+
+.main-section .cards-section .card-box .author-box p {
+	float: left;
+	width: 69%;
+}
+
+
+.main-section .cards-section .card-box .author-box img {
+	float: left;
+	margin-right: 10px;
+	width: 100%;
+	max-width: 25%;
+	border-radius: 50%;
+}
+.main-section .cards-section .card-box ul {
+	padding: 0;
+}
+
+
+.main-section .cards-section .card-box ul li {
+	padding: 5px 10px;
+	margin: 0;
+	color: #adadad;
+	cursor: pointer;
+}
+
+.main-section .cards-section .card-box ul li:hover {
+	/* animation: iconchangecolors 4s 1s infinite reverse ease-in; */
+	animation-name: iconchangecolors;
+	animation-duration: 4s;
+	animation-delay: .1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+@keyframes iconchangecolors {
+	0% { 
+	    color: red;
+    }
+	25% { color: black;}
+	50% { color: green;}
+	75% { color: yellow;}
+	100% { color: #adadad;}
+}
+
+
+@keyframes playwithlogo {
+	0% { 
+	   transform: translateX(0px);
+    }
+    25% {
+	   transform: rotate(-25deg); 
+	}
+    50% { 
+		   transform:  translateX(15px) rotate(25deg); 
+    }
+	75% { 
+	   transform: rotate(0deg); 
+	}
+	100% { 
+	   transform: translateX(0px);
+	}
+}
